@@ -32,7 +32,7 @@ export const PokemonLayout = ({pokemon}:{pokemon: Pokemon}) => {
     <Grid.Container css={{padding: '1rem', display: 'flex'}} gap={2}>
       <Grid css={{padding: '2rem'}} xs={12} md={4}>
         <Card hoverable>
-          <Card.Body>
+          <Card.Body css={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
             <Image
               src={pokemon.sprites.other?.dream_world.front_default || '/image-notfound.png'}
               alt={pokemon.name}
